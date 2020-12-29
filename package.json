@@ -1,0 +1,14 @@
+{
+  "name": "ts-tutor",
+  "version": "1.0.0",
+  "description": "## Reference",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
