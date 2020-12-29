@@ -1,5 +1,4 @@
 "use strict";
-// Function
 function add(n1, n2) {
     return n1 + n2;
 }
@@ -8,34 +7,27 @@ function add2(n1, n2) {
     return n1 + n2;
 }
 ;
-// void
 function add3(n1, n2) {
     console.log(n1 + n2);
 }
 ;
-// with Callback
 function addAndHandle(n1, n2, callback) {
-    var result = n1 + n2;
+    let result = n1 + n2;
     callback(result);
 }
 ;
-addAndHandle(10, 20, function (result) {
-    console.log(result); // 30
+addAndHandle(10, 20, (result) => {
+    console.log(result);
 });
-// Object
-// Explicit way to declare
-var person_explicit = {
+const person_explicit = {
     name: 'Max',
     age: 30
 };
-// Common way to declare
-var person_common = {
+const person_common = {
     name: 'Max',
     age: 30
 };
-// Tuple
-var role = [2, 'author'];
-// Enum
+let role = [2, 'author'];
 var Role;
 (function (Role) {
     Role[Role["ADMIN"] = 0] = "ADMIN";
@@ -50,14 +42,12 @@ var Role_IDfer;
     Role_IDfer[Role_IDfer["AUTHOR"] = 201] = "AUTHOR";
 })(Role_IDfer || (Role_IDfer = {}));
 ;
-// Literal types
-function combine(n1, n2, resultConversion // Literal type
-) {
+function combine(n1, n2, resultConversion) {
     if (resultConversion === 'A')
         console.log(n1 + n2);
     else
         console.log("resultConversion should be correct");
 }
 ;
-combine(1, 2, 'A'); // 3
-combine(1, 2, 'B'); // resultConversion should be correct
+combine(1, 2, 'A');
+combine(1, 2, 'B');
